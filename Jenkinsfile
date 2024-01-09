@@ -12,7 +12,10 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                javac Hello.java
+                python3 --version
+                gcc --version
+                g++ --version
+                java --version
                 '''
             }
         }
@@ -21,6 +24,7 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 python3 hello.py
+                javac Hello.java
                 java Hello.class
                 '''
             }

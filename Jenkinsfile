@@ -25,7 +25,7 @@ pipeline {
                 sh '''
                 python3 hello.py
                 javac Hello.java
-                java Hello.class
+                java Hello
                 '''
             }
         }
